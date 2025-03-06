@@ -40,7 +40,7 @@ class SecurityListener implements EventSubscriberInterface
     private $roleHierarchy;
     private $logger;
 
-    public function __construct(ArgumentNameConverter $argumentNameConverter, ?ExpressionLanguage $language = null, ?AuthenticationTrustResolverInterface $trustResolver = null, RoleHierarchyInterface $roleHierarchy = null, ?TokenStorageInterface $tokenStorage = null, ?AuthorizationCheckerInterface $authChecker = null, ?LoggerInterface $logger = null)
+    public function __construct(ArgumentNameConverter $argumentNameConverter, ?ExpressionLanguage $language = null, ?AuthenticationTrustResolverInterface $trustResolver = null, ?RoleHierarchyInterface $roleHierarchy = null, ?TokenStorageInterface $tokenStorage = null, ?AuthorizationCheckerInterface $authChecker = null, ?LoggerInterface $logger = null)
     {
         $this->argumentNameConverter = $argumentNameConverter;
         $this->tokenStorage = $tokenStorage;
