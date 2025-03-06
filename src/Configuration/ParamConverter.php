@@ -60,10 +60,10 @@ class ParamConverter extends ConfigurationAnnotation
      */
     public function __construct(
         $data = [],
-        string $class = null,
+        ?string $class = null,
         array $options = [],
         bool $isOptional = false,
-        string $converter = null
+        ?string $converter = null
     ) {
         $values = [];
         if (\is_string($data)) {

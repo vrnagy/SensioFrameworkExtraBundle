@@ -58,7 +58,7 @@ class IsGranted extends ConfigurationAnnotation
     public function __construct(
         $data = [],
         $subject = null,
-        string $message = null,
+        ?string $message = null,
         ?int $statusCode = null
     ) {
         $values = [];

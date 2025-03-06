@@ -33,11 +33,11 @@ class Entity extends ParamConverter
      */
     public function __construct(
         $data = [],
-        string $expr = null,
-        string $class = null,
+        ?string $expr = null,
+        ?string $class = null,
         array $options = [],
         bool $isOptional = false,
-        string $converter = null
+        ?string $converter = null
     ) {
         $values = [];
         if (\is_string($data)) {

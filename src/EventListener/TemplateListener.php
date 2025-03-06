@@ -36,7 +36,7 @@ class TemplateListener implements EventSubscriberInterface, ServiceSubscriberInt
     private $twig;
     private $container;
 
-    public function __construct(TemplateGuesser $templateGuesser, Environment $twig = null)
+    public function __construct(TemplateGuesser $templateGuesser, ?Environment $twig = null)
     {
         $this->templateGuesser = $templateGuesser;
         $this->twig = $twig;

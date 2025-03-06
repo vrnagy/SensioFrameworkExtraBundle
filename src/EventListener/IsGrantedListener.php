@@ -30,7 +30,7 @@ class IsGrantedListener implements EventSubscriberInterface
     private $argumentNameConverter;
     private $authChecker;
 
-    public function __construct(ArgumentNameConverter $argumentNameConverter, AuthorizationCheckerInterface $authChecker = null)
+    public function __construct(ArgumentNameConverter $argumentNameConverter, ?AuthorizationCheckerInterface $authChecker = null)
     {
         $this->argumentNameConverter = $argumentNameConverter;
         $this->authChecker = $authChecker;

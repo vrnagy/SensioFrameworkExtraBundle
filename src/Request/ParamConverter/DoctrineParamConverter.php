@@ -43,7 +43,7 @@ class DoctrineParamConverter implements ParamConverterInterface
      */
     private $defaultOptions;
 
-    public function __construct(ManagerRegistry $registry = null, ExpressionLanguage $expressionLanguage = null, array $options = [])
+    public function __construct(?ManagerRegistry $registry = null, ?ExpressionLanguage $expressionLanguage = null, array $options = [])
     {
         $this->registry = $registry;
         $this->language = $expressionLanguage;

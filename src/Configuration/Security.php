@@ -49,7 +49,7 @@ class Security extends ConfigurationAnnotation
      */
     public function __construct(
         $data = [],
-        string $message = null,
+        ?string $message = null,
         ?int $statusCode = null
     ) {
         $values = [];

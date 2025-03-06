@@ -111,14 +111,14 @@ class Cache extends ConfigurationAnnotation
      */
     public function __construct(
         array $values = [],
-        string $expires = null,
+        ?string $expires = null,
         $maxage = null,
         $smaxage = null,
-        bool $public = null,
-        bool $mustRevalidate = null,
-        array $vary = null,
-        string $lastModified = null,
-        string $etag = null,
+        ?bool $public = null,
+        ?bool $mustRevalidate = null,
+        ?array $vary = null,
+        ?string $lastModified = null,
+        ?string $etag = null,
         $maxstale = null,
         $staleWhileRevalidate = null,
         $staleIfError = null
